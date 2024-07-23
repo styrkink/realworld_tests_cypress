@@ -1,9 +1,8 @@
-
 export class LoginPage {
-    emailLoginField = 'input[name="email"]';
-    passwordLoginField = 'input[name="password"]';
-    LoginSubmitButton = 'button[type="submit"]';
-    errorMessage = '.error-messages';
+  emailLoginField = 'input[name="email"]';
+  passwordLoginField = 'input[name="password"]';
+  LoginSubmitButton = 'button[type="submit"]';
+  errorMessage = ".error-messages";
 
   fillSignInForm(email, password) {
     cy.get(this.emailLoginField).type(email);
@@ -13,5 +12,4 @@ export class LoginPage {
   submitLoginForm() {
     cy.get(this.LoginSubmitButton).click();
   }
-
 }

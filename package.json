@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "test:chromium": "npx cypress run --browser chrome",
+    "test:firefox": "npx cypress run --browser firefox",
+    "test:login": "npx cypress run --spec cypress/e2e/login.spec.cy.js",
+    "test:registr": "npx cypress run --spec cypress/e2e/registration.speс.cy.js",
+    "test:favorite": "npx cypress run --spec cypress/e2e/favorite.spec.cy.js",
+    "test:filters": "npx cypress run --spec cypress/e2e/filters.spec.cy.js",
+    "test:cloud": "npx cypress run --record --key 6a21d251-7026-4fe9-8ff5-c015cf1c07fb"
   },
   "keywords": [],
   "author": "",
